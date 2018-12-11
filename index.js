@@ -71,4 +71,5 @@ render(State);
 
 router
     .on('/:page', console.log)
+    .on('/', () => console.log('i am on the home page!'))
     .resolve();
