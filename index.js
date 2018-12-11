@@ -64,11 +64,11 @@ function render(state) {
     links[2].addEventListener(
         'click',
         handleNavigation
-    );
+    );  
 }
 
 render(State);
 
 router
-    .on('/blog:id', console.log)
+    .on('/:page', console.log)
     .resolve();
